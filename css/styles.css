@@ -4,6 +4,7 @@
     border: 0;
     font-family: 'Arial Narrow', 'Franklin Gothic Medium', Arial, sans-serif;
     font-weight: 800;
+    box-sizing: border-box;
 }
 
 #head-nav {
@@ -12,16 +13,20 @@
     position: relative;
     width: fit-content;
 }
-#Home-btn{
+
+#Home-btn {
     position: absolute;
     width: fit-content;
     display: flex;
     justify-content: right;
-    margin-left: 90rem;
+    /* margin-left: 90rem; */
+    padding: 0;
 }
-#ho-co{
+
+#ho-co {
     color: #000;
 }
+
 /* #nav-list {
     margin-top: 10px;
 }
@@ -39,9 +44,10 @@
 #nav-list a span {
     font-size: 1.8em;
 } */
-#collapsable-nav{
+#collapsable-nav {
     margin-right: 0;
 }
+
 header {
     background-color: #a20707;
     padding: 5px;
@@ -49,7 +55,7 @@ header {
     justify-content: center;
 }
 
-footer{
+footer {
     padding: 10px;
     background-color: black;
     font-family: 'Arial Narrow', 'Franklin Gothic Medium', Arial, sans-serif;
@@ -58,28 +64,36 @@ footer{
     align-items: center;
     display: flex;
     justify-content: center;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
 }
-h1{
+
+h1 {
     color: #000;
 }
-#ufc-foot{
+
+#ufc-foot {
     color: #a20707;
 }
-a:focus{
+
+a:focus {
     text-decoration: underline;
     color: rgb(237, 7, 7);
 }
-#ufc_logo{
+
+#ufc_logo {
     display: flex;
     justify-content: center;
+    padding: 0;
 }
-g:hover{
+
+g:hover {
     fill: #fff;
 }
+
 .logo {
     background-color: #a20707;
     padding: 0;
@@ -88,7 +102,19 @@ g:hover{
 .logo a:hover {
     background-color: rgb(255, 0, 51);
     color: black;
-    text-decoration:  rgb(255, 0, 51);
+    text-decoration: rgb(255, 0, 51);
+}
+
+.container {
+
+    width: 100%;
+    max-width: 1200px;
+    /* max width of the content */
+    margin: 0 auto;
+    /* center horizontally */
+    padding: 0 15px;
+    /* side padding */
+    box-sizing: border-box;
 }
 
 .col-lg-4 {
@@ -119,27 +145,30 @@ g:hover{
 }
 
 /* HOME PAGE */
-.col-xs-12{
+.col-xs-12 {
     box-shadow: 0 0 50px #a20707;
     border: 2px solid #a20707;
 
 }
 
-#img_con{
+#img_con {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 
-#Octagon{
+#Octagon {
     width: 100%;
-    padding: 35px;
+
     height: 50%;
     display: flex;
     justify-content: center;
 }
-#home-tiles{
+
+#home-tiles {
     padding: 3rem;
 }
+
 #P4P-tile,
 #Champions-tile,
 #HoF-tile {
@@ -161,7 +190,7 @@ g:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 #Champions-tile {
@@ -224,17 +253,21 @@ g:hover{
         margin: 0.5%;
         /* padding: 3px; */
     }
-
     #P4P {
         width: 98.5%;
         float: none;
         clear: both;
         margin-top: 1rem;
     }
+    #hof-main{
+        width: 48%;
+        float: left;
+        margin: 0.5%;
+    }
 }
 
 /********** Small devices only **********/
-@media (min-width: 767px) {
+@media (max-width: 767px) {
 
     /* Home Page */
     .container .jumbotron {
@@ -246,15 +279,21 @@ g:hover{
     #Champ,
     #P4P {
         margin: 5px;
-    }    
+    }
+    #hof-main{
+        width: 98%;
+        margin: 5px;
+    }
 }
-    /* End Home Page */
 
-    /* P4P PAGE STARTS */
-#headin{
+/* End Home Page */
+
+/* P4P PAGE STARTS */
+#headin {
     color: #a20707;
 }
-#p4p{
+
+#p4p {
     font-weight: 500;
     width: fit-content;
     /* background-color: #3F0C1F; */
@@ -262,30 +301,109 @@ g:hover{
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    margin-left: 21rem;
+    margin-left: 10rem;
     align-items: center;
 }
-.p4p-img{
+
+.p4p-img {
     display: flex;
     justify-content: right;
 }
-.p4p-num{
+
+.p4p-num {
     /* text-align: center;   */
     /* display: flex;
     justify-content: center; */
     /* align-items: center; */
     margin-left: 2rem;
 }
-#men-p4p{
+
+#men-p4p {
     border: 10px;
     border-color: #000;
     padding: 50px;
     padding-right: 50px;
 }
-#women-p4p{
+
+#women-p4p {
     border: 10px;
     border-color: #000;
     padding: 50px;
     padding-left: 50px;
-    margin-left: 5rem;
+    margin-left: 2rem;
+}
+
+/* Champions Page */
+
+
+.rankings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.weight-class {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.division {
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.champion-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.champion-label {
+    font-size: 0.8rem;
+    color: #aaa;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.ranking-list {
+    list-style: decimal;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+/* HALL OF FAME PAGE STARTS */
+#hof-main {
+    align-content: center;
+    font-weight: 800;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    position: relative;
+    /* padding: 5px; */
+    padding-bottom: 0;
+    margin: 20px 5px 20px 5px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+}
+#hof-head{
+    padding-top: 10px;
+    text-align: center;
+    color:gold;
+}
+#hof-subhead{
+    font-weight: 100;
+    font-size: medium;
+    text-align: center;
+    padding: 7px;
 }
