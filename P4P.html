@@ -13,89 +13,95 @@
 <body>
 
     <header>
-        <nav id="head-nav" class="navbar navbar-default">
-            <a href="index.html" class="logo">
-                <div id="ufc_logo">
-                    <svg viewBox="0 0 200 60" width="100" height="30" xmlns="http://www.w3.org/2000/svg">
-                        <!-- UFC LOGO -->
-                        <g fill="#000">
-                            <!-- U -->
-                            <path d="M0,0 L15,0 L15,35 L30,35 L30,0 L45,0 L45,50 L0,50 Z" />
-                            <!-- F -->
-                            <path d="M55,0 L90,0 L90,10 L70,10 L70,20 L85,20 L85,30 L70,30 L70,50 L55,50 Z" />
-                            <!-- C -->
-                            <path d="M100,0 L135,0 L135,10 L115,10 L115,40 L135,40 L135,50 L100,50 Z" />
-                        </g>
-                    </svg> <!-- UFC LOGO ends-->
-                </div>
-                <h1>Ultimate Fighting Championship</h1>
-            </a>
-        </nav>
-        <div id="Home-btn">
-            <a href="index.html">
-                <i class="fa fa-home" style="font-size:36px; color:black"></i><br>
-                <p id="ho-co">HOME</p>
-            </a>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6">
+                    <nav id="head-nav" class="navbar navbar-default">
+                        <a href="index.html" class="logo">
+                            <div class="homey">
+                                <div id="ufc_logo">
+                                    <svg viewBox="0 0 200 60" width="100" height="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="#000">
+                                            <path d="M0,0 L15,0 L15,35 L30,35 L30,0 L45,0 L45,50 L0,50 Z" />
+                                            <path
+                                                d="M55,0 L90,0 L90,10 L70,10 L70,20 L85,20 L85,30 L70,30 L70,50 L55,50 Z" />
+                                            <path d="M100,0 L135,0 L135,10 L115,10 L115,40 L135,40 L135,50 L100,50 Z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div id="Home-btn"  >
+                                    <a href="index.html">
+                                        <i class="fa fa-home" style="font-size:36px; color:black"></i><br>
+                                        <p id="ho-co">HOME</p>
+                                    </a>
+                                </div>
+                                <h1 id="ufc-full-form">Ultimate Fighting Championship</h1>
+                            </div>
 
+                        </a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <div class="row">
-        <h1 id="hof-head">UFC P4P Rankings</h1>
-        <div class="col-md-6 col-xs-12" id="p4p-main">
-            <h2 id="headin">MEN'S POUND FOR POUND RANKINGS<br>
-                <p>Islam Makhachev</p>
-            </h2>
-            <div><img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png?itok=Oo3I5Jhb"
-                class="img-fluid"></div>
-            <ol>
-                <li>Islam Makhachev</li>
-                <li>Jon Jones</li>
-                <li>Ilia Topuria</li>
-                <li>Merab Dvalishvili</li>
-                <li>Dricus Du Plessis</li>
-                <li>Magomed Ankalaev</li>
-                <li>Alexander Volkanovski</li>
-                <li>Alex Pereira</li>
-                <li>Jack Della Maddalena</li>
-                <li>Alexandre Pantoja</li>
-                <li>Tom Aspinall</li>
-                <li>Max Holloway</li>
-                <li>Belal Muhammad</li>
-                <li>Sean O'Malley</li>
-                <li>Charles Oliveira</li>
-            </ol>
+
+    <div id="p4p-container">
+    <div id="p4p" class="row">
+        <div id="men-p4p" class="col-sm-6 col-xs-12">
+        <h2 id="headin">MEN'S POUND FOR POUND</h2><br>
+        <div class="p4p-img"><img
+            src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png?itok=Oo3I5Jhb"
+            ></div>
+        <ol class="p4p-num">
+            <li>Islam Makhachev</li>
+            <li>Jon Jones</li>
+            <li>Ilia Topuria</li>
+            <li>Merab Dvalishvili</li>
+            <li>Dricus Du Plessis</li>
+            <li>Magomed Ankalaev</li>
+            <li>Alexander Volkanovski</li>
+            <li>Alex Pereira</li>
+            <li>Jack Della Maddalena</li>
+            <li>Alexandre Pantoja</li>
+            <li>Tom Aspinall</li>
+            <li>Max Holloway</li>
+            <li>Belal Muhammad</li>
+            <li>Sean O'Malley</li>
+            <li>Charles Oliveira</li>
+        </ol>
         </div>
-        <div class="col-md-6 col-xs-12" id="p4p-main">
-            <h2 id="headin">WOMEN'S POUND FOR POUND RANKINGS<br>
-                <p>Valentina Shevchenko</p>
-            </h2>
-            <div><img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-05/SHEVCHENKO_VALENTINA_BELT_05-10.png?itok=LYA3INzU"
-                class="img-fluid"></div>
-            <ol>
-                <li>Valentina Shevchenko</li>
-                <li>Zhang Weili</li>
-                <li>Julianna Peña</li>
-                <li>Manon Fiorot</li>
-                <li>Alexa Grasso</li>
-                <li>Erin Blanchfield</li>
-                <li>Kayla Harrison</li>
-                <li>Natalia Silva</li>
-                <li>Virna Jandiroba</li>
-                <li>Raquel Pennington</li>
-                <li>Rose Namajunas</li>
-                <li>Tatiana Suarez</li>
-                <li>Yan Xiaonan</li>
-                <li>Maycee Barber</li>
-                <li>Amanda Lemos</li>
-            </ol>
+        <div id="women-p4p" class="col-md-6 col-xs-12">
+        <h2 id="headin">WOMEN'S POUND FOR POUND</h2><br>
+        <div class="p4p-img"><img
+            src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-05/SHEVCHENKO_VALENTINA_BELT_05-10.png?itok=LYA3INzU" 
+            ></div>
+        <ol class="p4p-num" class="col-md-6 col-xs-12">
+            <li>Valentina Shevchenko</li>
+            <li>Zhang Weili</li>
+            <li>Julianna Peña</li>
+            <li>Manon Fiorot</li>
+            <li>Alexa Grasso</li>
+            <li>Erin Blanchfield</li>
+            <li>Kayla Harrison</li>
+            <li>Natalia Silva</li>
+            <li>Virna Jandiroba</li>
+            <li>Raquel Pennington</li>
+            <li>Rose Namajunas</li>
+            <li>Tatiana Suarez</li>
+            <li>Yan Xiaonan</li>
+            <li>Maycee Barber</li>
+            <li>Amanda Lemos</li>
+        </ol>
         </div>
     </div>
-
-    <footer>
-        <h2>This is not the official website of UFC<br>
-            The Official Website is: <a href="https://www.ufc.com/" id="ufc-foot">ufc.com</a> </h2>
-    </footer>
+    </div>
+        <footer>
+            <h2>This is not the official website of UFC<br>
+                The Official Website is: <a href="https://www.ufc.com/" id="ufc-foot">ufc.com</a> </h2>
+        </footer>
 
 
 </body>

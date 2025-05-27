@@ -12,56 +12,70 @@
 
 <body>
     <header>
-        <nav id="head-nav" class="navbar navbar-default">
-            <a href="index.html" class="logo">
-                <div id="ufc_logo">
-                    <svg viewBox="0 0 200 60" width="100" height="30" xmlns="http://www.w3.org/2000/svg">
-                        <!-- UFC LOGO -->
-                        <g fill="#000">
-                            <!-- U -->
-                            <path d="M0,0 L15,0 L15,35 L30,35 L30,0 L45,0 L45,50 L0,50 Z" />
-                            <!-- F -->
-                            <path d="M55,0 L90,0 L90,10 L70,10 L70,20 L85,20 L85,30 L70,30 L70,50 L55,50 Z" />
-                            <!-- C -->
-                            <path d="M100,0 L135,0 L135,10 L115,10 L115,40 L135,40 L135,50 L100,50 Z" />
-                        </g>
-                    </svg> <!-- UFC LOGO ends-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6">
+                    <nav id="head-nav" class="navbar navbar-default">
+                        <a href="index.html" class="logo">
+                            <div class="homey">
+                                <div id="ufc_logo">
+                                    <svg viewBox="0 0 200 60" width="100" height="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="#000">
+                                            <path d="M0,0 L15,0 L15,35 L30,35 L30,0 L45,0 L45,50 L0,50 Z" />
+                                            <path
+                                                d="M55,0 L90,0 L90,10 L70,10 L70,20 L85,20 L85,30 L70,30 L70,50 L55,50 Z" />
+                                            <path d="M100,0 L135,0 L135,10 L115,10 L115,40 L135,40 L135,50 L100,50 Z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div id="Home-btn"  >
+                                    <a href="index.html">
+                                        <i class="fa fa-home" style="font-size:36px; color:black"></i><br>
+                                        <p id="ho-co">HOME</p>
+                                    </a>
+                                </div>
+                                <h1 id="ufc-full-form">Ultimate Fighting Championship</h1>
+                            </div>
+
+                        </a>
+
+                    </nav>
                 </div>
-                <h1>Ultimate Fighting Championship</h1>
-            </a>
-        </nav>
-        <div id="Home-btn">
-                <a href="index.html">
-                    <i class="fa fa-home" style="font-size:36px; color:black"></i><br><p id="ho-co">HOME</p></a>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="col-xs-12" id="img_con">
-            <img src="images/UFC_1200px.png" id="Octagon" alt="Picture of Octagon" class="img-responsive visible-xs">
-        </div>
 
-        <div id="home-tiles" class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12" id="P4P">
-                <a href="P4P.html">
-                    <div id="P4P-tile">
-                        <span>P4P Rankings</span>
-                    </div>
-                </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12" id="img_con">
+                <img src="images/UFC_1200px.png" id="Octagon" alt="Picture of Octagon"
+                    class="img-responsive visible-xs">
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12" id="Champ">
-                <a href="Champions.html">
-                    <div id="Champions-tile">
-                        <span>Champions</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12" id="hof">
-                <a href="Hall_Of_Fame.html">
-                    <div id="HoF-tile">
-                        <span>Hall Of Fame</span>
-                    </div>
-                </a>
+
+            <div id="home-tiles" class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12" id="P4P">
+                    <a href="P4P.html">
+                        <div id="P4P-tile">
+                            <span>P4P Rankings</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12" id="Champ">
+                    <a href="Champions.html">
+                        <div id="Champions-tile">
+                            <span>Champions</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12" id="hof">
+                    <a href="Hall_Of_Fame.html">
+                        <div id="HoF-tile">
+                            <span>Hall Of Fame</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

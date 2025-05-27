@@ -12,36 +12,44 @@
 
 <body>
     <header>
-        <nav id="head-nav" class="navbar navbar-default">
-            <a href="index.html" class="logo">
-                <div id="ufc_logo">
-                    <svg viewBox="0 0 200 60" width="100" height="30" xmlns="http://www.w3.org/2000/svg">
-                        <!-- UFC LOGO -->
-                        <g fill="#000">
-                            <!-- U -->
-                            <path d="M0,0 L15,0 L15,35 L30,35 L30,0 L45,0 L45,50 L0,50 Z" />
-                            <!-- F -->
-                            <path d="M55,0 L90,0 L90,10 L70,10 L70,20 L85,20 L85,30 L70,30 L70,50 L55,50 Z" />
-                            <!-- C -->
-                            <path d="M100,0 L135,0 L135,10 L115,10 L115,40 L135,40 L135,50 L100,50 Z" />
-                        </g>
-                    </svg> <!-- UFC LOGO ends-->
-                </div>
-                <h1>Ultimate Fighting Championship</h1>
-            </a>
-        </nav>
-        <div id="Home-btn">
-            <a href="index.html">
-                <i class="fa fa-home" style="font-size:36px; color:black"></i><br>
-                <p id="ho-co">HOME</p>
-            </a>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6">
+                    <nav id="head-nav" class="navbar navbar-default">
+                        <a href="index.html" class="logo">
+                            <div class="homey">
+                                <div id="ufc_logo">
+                                    <svg viewBox="0 0 200 60" width="100" height="30"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="#000">
+                                            <path d="M0,0 L15,0 L15,35 L30,35 L30,0 L45,0 L45,50 L0,50 Z" />
+                                            <path
+                                                d="M55,0 L90,0 L90,10 L70,10 L70,20 L85,20 L85,30 L70,30 L70,50 L55,50 Z" />
+                                            <path d="M100,0 L135,0 L135,10 L115,10 L115,40 L135,40 L135,50 L100,50 Z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div id="Home-btn">
+                                    <a href="index.html">
+                                        <i class="fa fa-home" style="font-size:36px; color:black"></i><br>
+                                        <p id="ho-co">HOME</p>
+                                    </a>
+                                </div>
+                                <h1 id="ufc-full-form">Ultimate Fighting Championship</h1>
+                            </div>
 
+                        </a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
+
     <div id="p4p">
-        <div id="men-p4p" class="col-md-4 col-sm-6 col-xs-12">
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
             <h2 id="headin">FLYWEIGHT</h2><br>
-            <h2 class="champion-name">Alexandre Pantoja</h2>
+            <h2 class="champion-name">Alexandre <br> Pantoja</h2>
             <p class="champion-label">CHAMPION</p>
             <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/5/PANTOJA_ALEXANDRE_BELT_12-07.png?itok=72qBg0ec"
                 alt="Pantoja" class="champion-img" />
@@ -57,59 +65,208 @@
                 <li>Steve Erceg</li>
             </ol>
         </div>
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">BANTAMWEIGHT</h2><br>
+            <h2 class="champion-name">Merab <br> Dvalishvili</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/7/DVALISHVILI_MERAB_BELT_01-18.png?itok=hNIh7vO2"
+                alt="Dvalishvili" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Sean O'Malley</li>
+                <li>Petr Yan</li>
+                <li>Umar Nurmagomedov</li>
+                <li>Cory Sandhagen</li>
+                <li>Song Yadong</li>
+                <li>Deiveson Figueiredo</li>
+                <li>Marlon Vera</li>
+                <li>Rob Font</li>
+                <li>Henry Cejudo</li>
+            </ol>
+        </div>
 
-        <div id="p4p">
-            <div id="men-p4p" class="col-md-4 col-sm-6 col-xs-12">
-                <h2 id="headin">BANTAMWEIGHT</h2><br>
-                <h2 class="champion-name">Merab Dvalishvili</h2>
-                <p class="champion-label">CHAMPION</p>
-                <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/7/DVALISHVILI_MERAB_BELT_01-18.png?itok=hNIh7vO2"
-                    alt="Dvalishvili" class="champion-img" />
-                <ol class="ranking-list">
-                    <li>Sean O'Malley</li>
-                    <li>Petr Yan</li>
-                    <li>Umar Nurmagomedov</li>
-                    <li>Cory Sandhagen</li>
-                    <li>Song Yadong</li>
-                    <li>Deiveson Figueiredo</li>
-                    <li>Marlon Vera</li>
-                    <li>Rob Font</li>
-                    <li>Henry Cejudo</li>
-                </ol>
-            </div>
+        <!-- Featherweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">FEATHERWEIGHT</h2><br>
+            <h2 class="champion-name">Alexander Volkanovski</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2024-02/VOLKANOVSKI_ALEXANDER_BELT_02-17.png?itok=x9VWRHMq"
+                alt="Volkanovski" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Max Holloway</li>
+                <li>Diego Lopes</li>
+                <li>Ilia Topuria</li>
+                <li>Yair Rodriguez</li>
+                <li>Movsar Evloev</li>
+                <li>Arnold Allen</li>
+                <li>Brian Ortega</li>
+                <li>Lerone Murphy</li>
+                <li>Aljamain Sterling</li>
+            </ol>
+        </div>
+        <!-- Lightweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">LIGHTWEIGHT</h2><br>
+            <h2 class="champion-name">Islam <br> Makhachev</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png?itok=Oo3I5Jhb"
+                alt="Islam Makhachev" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Arman Tsarukyan</li>
+                <li>Charles Oliveira</li>
+                <li>Justin Gaethje</li>
+                <li>Max Holloway</li>
+                <li>Dustin Poirier</li>
+                <li>Dan Hooker</li>
+                <li>Mateusz Gamrot</li>
+                <li>Paddy Pimblett</li>
+                <li>Beneil Dariush</li>
+            </ol>
+        </div>
 
-            <!-- Featherweight -->
-            <div id="p4p">
-                <div id="men-p4p" class="col-md-4 col-sm-6 col-xs-12">
-                    <h2 id="headin">FEATHERWEIGHT</h2><br>
-                    <h2 class="champion-name">Alexander Volkanovski</h2>
-                    <p class="champion-label">CHAMPION</p>
-                    <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2024-02/VOLKANOVSKI_ALEXANDER_BELT_02-17.png?itok=x9VWRHMq"
-                        alt="Volkanovski" class="champion-img" />
-                    <ol class="ranking-list">
-                        <li>Max Holloway</li>
-                        <li>Diego Lopes</li>
-                        <li>Ilia Topuria</li>
-                        <li>Yair Rodriguez</li>
-                        <li>Movsar Evloev</li>
-                        <li>Arnold Allen</li>
-                        <li>Brian Ortega</li>
-                        <li>Lerone Murphy</li>
-                        <li>Aljamain Sterling</li>
-                    </ol>
-                </div>
-            </div>
+        <!-- Welterweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">WELTERWEIGHT</h2><br>
+            <h2 class="champion-name">Jack Della <br> Maddalena</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-05/DELLA_MADDALENA_JACK_BELT_05-10.png?itok=3B0B1_ER"
+                alt="Jack Della Maddalena" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Belal Muhammad</li>
+                <li>Sean Brady</li>
+                <li>Shavkat Rakhmonov</li>
+                <li>Leon Edwards</li>
+                <li>Kamaru Usman</li>
+                <li>Ian Machado Garry</li>
+                <li>Joaquin Buckley</li>
+                <li>Michael Morales</li>
+                <li>Colby Covington</li>
+            </ol>
+        </div>
 
-</body>
+        <!-- Middleweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">MIDDLEWEIGHT</h2><br>
+            <h2 class="champion-name">Dricus Du <br> Plessis</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-02/DU_PLESSIS_DRICUS_BELT_02-08.png?itok=Kbj3Qzyp"
+                alt="Dricus Du Plessis" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Nassourdine Imavov</li>
+                <li>Sean Strickland</li>
+                <li>Khamzat Chimaev</li>
+                <li>Israel Adesanya</li>
+                <li>Robert Whittaker</li>
+                <li>Caio Borralho</li>
+                <li>Jared Cannonier</li>
+                <li>Roman Dolidze</li>
+                <li>Anthony Hernandez</li>
+            </ol>
+        </div>
 
-</html>
+        <!-- Light Heavyweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">LIGHT HEAVYWEIGHT</h2><br>
+            <h2 class="champion-name">Magomed Ankalaev</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-03/ANKALAEV_MAGOMED_BELTMOCK.png?itok=mpphLJRD"
+                alt="Magomed Ankalaev" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Alex Pereira</li>
+                <li>Jiří Procházka</li>
+                <li>Carlos Ulberg</li>
+                <li>Jamahal Hill</li>
+                <li>Jan Błachowicz</li>
+                <li>Aleksandar Rakić</li>
+                <li>Khalil Rountree Jr.</li>
+                <li>Dominick Reyes</li>
+                <li>Volkan Oezdemir</li>
+            </ol>
+        </div>
+        <!-- Heavyweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">HEAVYWEIGHT</h2><br>
+            <h2 class="champion-name">Jon <br> Jones</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/5/JONES_JON_BELT_11-16.png?itok=RksaItfo"
+                alt="Jon Jones" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Tom Aspinall <span style="font-size: 10px; font-weight: bold;">INTERIM</span></li>
+                <li>Ciryl Gane</li>
+                <li>Alexander Volkov</li>
+                <li>Sergei Pavlovich</li>
+                <li>Curtis Blaydes</li>
+                <li>Jailton Almeida</li>
+                <li>Sergei Spivac</li>
+                <li>Marcin Tybura</li>
+                <li>Derrick Lewis</li>
+            </ol>
+        </div>
 
+        <!-- Women's Strawweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">WOMEN'S STRAWWEIGHT</h2><br>
+            <h2 class="champion-name">Zhang Weili</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-02/ZHANG_WEILI_BELT_02-08.png?itok=8nCQHXef"
+                alt="Zhang Weili" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Virna Jandiroba</li>
+                <li>Tatiana Suarez</li>
+                <li>Yan Xiaonan</li>
+                <li>Amanda Lemos</li>
+                <li>Jéssica Andrade</li>
+                <li>Mackenzie Dern</li>
+                <li>Amanda Ribas</li>
+                <li>Isamin Lucindo</li>
+                <li>Gillian Robertson</li>
+            </ol>
+        </div>
 
+        <!-- Women's Flyweight -->
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">WOMEN'S FLYWEIGHT</h2><br>
+            <h2 class="champion-name">Valentina Shevchenko</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-05/SHEVCHENKO_VALENTINA_BELT_05-10.png?itok=LYA3INzU"
+                alt="Valentina Shevchenko" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Natalia Silva</li>
+                <li>Manon Fiorot</li>
+                <li>Alexa Grasso</li>
+                <li>Erin Blanchfield</li>
+                <li>Maycee Barber</li>
+                <li>Jasmine Jasudavicius</li>
+                <li>Rose Namajunas</li>
+                <li>Viviane Araújo</li>
+                <li>Jéssica Andrade</li>
+            </ol>
+        </div>
+        <div id="champ" class="col-md-4 col-sm-6 col-xs-12">
+            <h2 id="headin">WOMEN'S BANTAMWEIGHT</h2><br>
+            <h2 class="champion-name">Julianna Peña</h2>
+            <p class="champion-label">CHAMPION</p>
+            <img src="https://ufc.com/images/styles/athlete_profile_listing_medium_1x/s3/2025-01/5/PENA_JULIANNA_BELT_07-30.png?itok=bDPFSly7"
+                alt="Julianna Peña" class="champion-img" />
+            <ol class="ranking-list">
+                <li>Raquel Pennington</li>
+                <li>Kayla Harrison</li>
+                <li>Ketlen Vieira</li>
+                <li>Norma Dumont</li>
+                <li>Macy Chiasson</li>
+                <li>Irene Aldana</li>
+                <li>Ailin Perez</li>
+                <li>Mayra Bueno Silva</li>
+                <li>Yana Santos</li>
+            </ol>
+        </div>
+    </div>
+    </div>
+    </div>
 
-<footer>
-    <h2>This is not the official website of UFC<br>
-        The Official Website is: <a href="https://www.ufc.com/" id="ufc-foot">ufc.com</a> </h2>
-</footer>
+    <footer>
+        <h2>This is not the official website of UFC<br>
+            The Official Website is: <a href="https://www.ufc.com/" id="ufc-foot">ufc.com</a> </h2>
+    </footer>
 
 
 </body>
